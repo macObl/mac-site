@@ -1,0 +1,4 @@
+div:empty:not(:focus):before {
+  content: attr(data-text);
+  color: #999999;
+}

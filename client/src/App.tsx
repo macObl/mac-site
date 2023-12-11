@@ -1,8 +1,11 @@
 // import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App1 from "./routes/App1";
-import App2 from "./routes/App2";
-import App3 from "./routes/App3";
+import Home from "./routes/Home";
+import WeatherApp from "./routes/WeatherApp";
+import BookSearch from "./routes/BookSearch";
+import ToDoList from "./routes/ToDoList";
+import TicTacToe from "./routes/TicTacToe";
+import Calculator from "./routes/Calculator";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,9 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<App1 />} />
-        <Route path="/App2" element={<App2 />} />
-        <Route path="/App3" element={<App3 />} />
+        <Route index element={<Home />} />
+        <Route path="/weather-app" element={<WeatherApp />} />
+        <Route path="/book-search" element={<BookSearch />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/tic-tac-toe" element={<TicTacToe />} />
+        <Route path="/to-do-list" element={<ToDoList />} />
       </Routes>
     </BrowserRouter>
   );
